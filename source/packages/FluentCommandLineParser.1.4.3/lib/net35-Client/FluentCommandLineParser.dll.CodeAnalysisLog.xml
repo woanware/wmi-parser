@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Namespaces>
+  <Namespace Name="Fclp">
+   <Messages>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Fclp.Internals">
+   <Messages>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp.Internals'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Fclp.Internals.Errors">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'Fclp.Internals.Errors' with another namespace.</Issue>
+    </Message>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp.Internals.Errors'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Fclp.Internals.Extensions">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'Fclp.Internals.Extensions' with another namespace.</Issue>
+    </Message>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp.Internals.Extensions'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Fclp.Internals.Parsing">
+   <Messages>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp.Internals.Parsing'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Fclp.Internals.Parsing.OptionParsers">
+   <Messages>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp.Internals.Parsing.OptionParsers'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Fclp.Internals.Validators">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'Fclp.Internals.Validators' with another namespace.</Issue>
+    </Message>
+    <Message Id="Fclp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fclp' in namespace name 'Fclp.Internals.Validators'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="Z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\bin\release\FluentCommandLineParser.dll">
+   <Modules>
+    <Module Name="fluentcommandlineparser.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'FluentCommandLineParser.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Fclp">
+       <Types>
+        <Type Name="CommandLineParserErrorFormatter" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Format(System.Collections.Generic.IEnumerable`1&lt;Fclp.ICommandLineParserError&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser" File="CommandLineParserErrorFormatter.cs" Line="49">In externally visible method 'CommandLineParserErrorFormatter.Format(IEnumerable&lt;ICommandLineParserError&gt;)', validate parameter 'parserErrors' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FormatExpectedOptionNotFoundError(Fclp.Internals.Errors.ExpectedOptionNotFoundParseError)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser" File="CommandLineParserErrorFormatter.cs" Line="84">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'CommandLineParserErrorFormatter.FormatExpectedOptionNotFoundError(ExpectedOptionNotFoundParseError)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FormatOptionSyntaxParseError(Fclp.Internals.Errors.OptionSyntaxParseError)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser" File="CommandLineParserErrorFormatter.cs" Line="75">Because the behavior of 'string.Format(string, object, object, object)' could vary based on the current user's locale settings, replace this call in 'CommandLineParserErrorFormatter.FormatOptionSyntaxParseError(OptionSyntaxParseError)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FluentCommandLineParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Options" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser" File="FluentCommandLineParser.cs" Line="88">Change 'List&lt;ICommandLineOption&gt;' in 'FluentCommandLineParser.Options' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetupInternal`1(System.String,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="OptionFactory" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser" File="FluentCommandLineParser.cs" Line="185">Correct the spelling of the unrecognized token 'OptionFactory' in the literal '"OptionFactory is producing unexpected results."'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ICommandLineOptionBuilderFluent`1" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#As(System.Char)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="As" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'ICommandLineOptionBuilderFluent&lt;TProperty&gt;.As(char)' so that it no longer conflicts with the reserved language keyword 'As'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#As(System.Char,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="As" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'ICommandLineOptionBuilderFluent&lt;TProperty&gt;.As(char, string)' so that it no longer conflicts with the reserved language keyword 'As'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#As(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="As" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'ICommandLineOptionBuilderFluent&lt;TProperty&gt;.As(string)' so that it no longer conflicts with the reserved language keyword 'As'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ICommandLineOptionFluent`1" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Callback(System.Action`1&lt;!0&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change either member or parameter name 'callback' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CaptureAdditionalArguments(System.Action`1&lt;System.Collections.Generic.IEnumerable`1&lt;System.String&gt;&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError">Consider a design where 'ICommandLineOptionFluent&lt;T&gt;.CaptureAdditionalArguments(Action&lt;IEnumerable&lt;string&gt;&gt;)' doesn't nest generic type 'Action&lt;IEnumerable&lt;string&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ICommandLineParserError" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Option" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Option" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'ICommandLineParserError.Option' so that it no longer conflicts with the reserved language keyword 'Option'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ICommandLineParserResult" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AdditionalOptionsFound" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError">Consider a design where 'ICommandLineParserResult.AdditionalOptionsFound' doesn't nest generic type 'IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UnMatchedOptions" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="UnMatched" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'UnMatched' in member name 'ICommandLineParserResult.UnMatchedOptions' exists as a discrete term. If your usage is intended to be single word, case it as 'Unmatched' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Un" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'Un' in member name 'ICommandLineParserResult.UnMatchedOptions' by changing it to 'UN'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IFluentCommandLineParser`1" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Object" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Object" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'IFluentCommandLineParser&lt;TBuildType&gt;.Object' so that it no longer conflicts with the reserved language keyword 'Object'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Setup`1(System.Linq.Expressions.Expression`1&lt;System.Func`2&lt;!0,!!0&gt;&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError">Consider a design where 'IFluentCommandLineParser&lt;TBuildType&gt;.Setup&lt;TProperty&gt;(Expression&lt;Func&lt;TBuildType, TProperty&gt;&gt;)' doesn't nest generic type 'Expression&lt;Func&lt;TBuildType, TProperty&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IHelpCommandLineOptionFluent" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Callback(System.Action)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change either member or parameter name 'callback' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Callback(System.Action`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change either member or parameter name 'callback' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InvalidOptionNameException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Error">Add [Serializable] to 'InvalidOptionNameException' as this type implements ISerializable.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="OptionAlreadyExistsException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="Accessibility" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser" File="OptionAlreadyExistsException.cs" Line="52">Change the accessibility of 'OptionAlreadyExistsException.OptionAlreadyExistsException(SerializationInfo, StreamingContext)' to protected.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OptionSyntaxException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'OptionSyntaxException': protected OptionSyntaxException(SerializationInfo, StreamingContext).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'OptionSyntaxException': public OptionSyntaxException(String).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'OptionSyntaxException': public OptionSyntaxException(String, Exception).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="UnsupportedTypeException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'UnsupportedTypeException': protected UnsupportedTypeException(SerializationInfo, StreamingContext).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'UnsupportedTypeException': public UnsupportedTypeException(String).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'UnsupportedTypeException': public UnsupportedTypeException(String, Exception).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Fclp.Internals">
+       <Types>
+        <Type Name="CommandLineOptionBuilderFluent`2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Fclp.IFluentCommandLineParser,!0,System.Linq.Expressions.Expression`1&lt;System.Func`2&lt;!0,!1&gt;&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals" File="CommandLineOptionBuilderFluent.cs" Line="48">Consider a design where 'CommandLineOptionBuilderFluent&lt;TBuildType, TProperty&gt;.CommandLineOptionBuilderFluent(IFluentCommandLineParser, TBuildType, Expression&lt;Func&lt;TBuildType, TProperty&gt;&gt;)' doesn't nest generic type 'Expression&lt;Func&lt;TBuildType, TProperty&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EmptyHelpCommandLineOption" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ShouldShowHelp(System.Collections.Generic.IEnumerable`1&lt;Fclp.Internals.Parsing.ParsedOption&gt;,System.StringComparison)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals" File="EmptyHelpCommandLineOption.cs" Line="44">In member 'EmptyHelpCommandLineOption.ShouldShowHelp(IEnumerable&lt;ParsedOption&gt;, StringComparison)', change parameter name 'commandLineArgs' to 'parsedOptions' in order to match the identifier as it has been declared in 'IHelpCommandLineOption.ShouldShowHelp(IEnumerable&lt;ParsedOption&gt;, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SpecialCharacters" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OptionPrefix" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="CriticalWarning">Either replace 'SpecialCharacters.OptionPrefix' with a strongly typed collection that cannot be changed, or replace the public field with a method that returns a clone of a private array.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OptionSuffix" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="CriticalWarning">Either replace 'SpecialCharacters.OptionSuffix' with a strongly typed collection that cannot be changed, or replace the public field with a method that returns a clone of a private array.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShortOptionPrefix" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="CriticalWarning">Either replace 'SpecialCharacters.ShortOptionPrefix' with a strongly typed collection that cannot be changed, or replace the public field with a method that returns a clone of a private array.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ValueAssignments" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="CriticalWarning">Either replace 'SpecialCharacters.ValueAssignments' with a strongly typed collection that cannot be changed, or replace the public field with a method that returns a clone of a private array.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Whitespace" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Whitespace" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'Whitespace' in member name 'SpecialCharacters.Whitespace' should be expressed as a compound word, 'WhiteSpace'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Fclp.Internals.Extensions">
+       <Types>
+        <Type Name="UsefulExtension" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ContainsWhitespace(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Whitespace" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="79">The discrete term 'Whitespace' in member name 'UsefulExtension.ContainsWhitespace(this string)' should be expressed as a compound word, 'WhiteSpace'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ElementAtOrDefault`1(!!0[],System.Int32,!!0)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="157">In externally visible method 'UsefulExtension.ElementAtOrDefault&lt;T&gt;(this T[], int, T)', validate parameter 'items' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ForEach`1(System.Collections.Generic.IEnumerable`1&lt;!!0&gt;,System.Action`1&lt;!!0&gt;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="66">In externally visible method 'UsefulExtension.ForEach&lt;TSource&gt;(this IEnumerable&lt;TSource&gt;, Action&lt;TSource&gt;)', validate parameter 'enumerable' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="68">In externally visible method 'UsefulExtension.ForEach&lt;TSource&gt;(this IEnumerable&lt;TSource&gt;, Action&lt;TSource&gt;)', validate parameter 'action' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsWrappedInDoubleQuotes(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="118">In method 'UsefulExtension.IsWrappedInDoubleQuotes(this string)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="System.String.EndsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="118">Because the behavior of 'string.EndsWith(string)' could vary based on the current user's locale settings, replace this call in 'UsefulExtension.IsWrappedInDoubleQuotes(this string)' with a call to 'string.EndsWith(string, StringComparison)'. If the result of 'string.EndsWith(string, StringComparison)' will be displayed to the user, such as when sorting a list of items for display in a list box, specify 'StringComparison.CurrentCulture' or 'StringComparison.CurrentCultureIgnoreCase' as the 'StringComparison' parameter. If comparing case-insensitive identifiers, such as file paths, environment variables, or registry keys and values, specify 'StringComparison.OrdinalIgnoreCase'. Otherwise, if comparing case-sensitive identifiers, specify 'StringComparison.Ordinal'.</Issue>
+            </Message>
+            <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="118">Because the behavior of 'string.StartsWith(string)' could vary based on the current user's locale settings, replace this call in 'UsefulExtension.IsWrappedInDoubleQuotes(this string)' with a call to 'string.StartsWith(string, StringComparison)'. If the result of 'string.StartsWith(string, StringComparison)' will be displayed to the user, such as when sorting a list of items for display in a list box, specify 'StringComparison.CurrentCulture' or 'StringComparison.CurrentCultureIgnoreCase' as the 'StringComparison' parameter. If comparing case-insensitive identifiers, such as file paths, environment variables, or registry keys and values, specify 'StringComparison.OrdinalIgnoreCase'. Otherwise, if comparing case-sensitive identifiers, specify 'StringComparison.Ordinal'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="118">In externally visible method 'UsefulExtension.IsWrappedInDoubleQuotes(this string)', validate parameter 'str' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveAnyWrappingDoubleQuotes(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="95">In method 'UsefulExtension.RemoveAnyWrappingDoubleQuotes(this string)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="95">In externally visible method 'UsefulExtension.RemoveAnyWrappingDoubleQuotes(this string)', validate parameter 'str' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SplitOnWhitespace(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Whitespace" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="129">The discrete term 'Whitespace' in member name 'UsefulExtension.SplitOnWhitespace(this string)' should be expressed as a compound word, 'WhiteSpace'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WrapInDoubleQuotes(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="87">In method 'UsefulExtension.WrapInDoubleQuotes(this string)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="87">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'UsefulExtension.WrapInDoubleQuotes(this string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WrapInDoubleQuotesIfContainsWhitespace(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Whitespace" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="106">The discrete term 'Whitespace' in member name 'UsefulExtension.WrapInDoubleQuotesIfContainsWhitespace(this string)' should be expressed as a compound word, 'WhiteSpace'.</Issue>
+            </Message>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Extensions" File="UsefulExtension.cs" Line="106">In method 'UsefulExtension.WrapInDoubleQuotesIfContainsWhitespace(this string)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Fclp.Internals.Parsing">
+       <Types>
+        <Type Name="CommandLineOptionGrouper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsEndOfOptionsKey(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Equals(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="CommandLineOptionGrouper.cs" Line="140">'CommandLineOptionGrouper.IsEndOfOptionsKey(string)' passes 'StringComparison.InvariantCultureIgnoreCase' as the 'StringComparison' parameter to 'string.Equals(string, string, StringComparison)'. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CommandLineParserEngineMark2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsEndOfOptionsKey(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Equals(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="CommandLineParserEngineMark2.cs" Line="147">'CommandLineParserEngineMark2.IsEndOfOptionsKey(string)' passes 'StringComparison.InvariantCultureIgnoreCase' as the 'StringComparison' parameter to 'string.Equals(string, string, StringComparison)'. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CommandLineParserResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AdditionalOptionsFound" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'CommandLineParserResult.AdditionalOptionsFound' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError">Consider a design where 'CommandLineParserResult.AdditionalOptionsFound' doesn't nest generic type 'IList&lt;KeyValuePair&lt;string, string&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Fclp.ICommandLineParserResult.Errors" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#Fclp.ICommandLineParserResult.get_Errors()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="CommandLineParserResult.cs" Line="63">Make 'CommandLineParserResult' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ICommandLineParserResult.Errors.get()' and is visible to derived classes.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UnMatchedOptions" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'CommandLineParserResult.UnMatchedOptions' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message Id="UnMatched" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'UnMatched' in member name 'CommandLineParserResult.UnMatchedOptions' exists as a discrete term. If your usage is intended to be single word, case it as 'Unmatched' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Un" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'Un' in member name 'CommandLineParserResult.UnMatchedOptions' by changing it to 'UN'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OptionArgumentParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsEndOfOptionsKey(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Equals(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="OptionArgumentParser.cs" Line="94">'OptionArgumentParser.IsEndOfOptionsKey(string)' passes 'StringComparison.InvariantCultureIgnoreCase' as the 'StringComparison' parameter to 'string.Equals(string, string, StringComparison)'. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ParseArguments(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;,Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="OptionArgumentParser.cs" Line="44">The 'this' parameter (or 'Me' in Visual Basic) of 'OptionArgumentParser.ParseArguments(IEnumerable&lt;string&gt;, ParsedOption)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="OptionArgumentParser.cs" Line="44">In externally visible method 'OptionArgumentParser.ParseArguments(IEnumerable&lt;string&gt;, ParsedOption)', validate parameter 'option' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ParsedOption" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AdditionalValues" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'ParsedOption.AdditionalValues' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Equals(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="ParsedOption.cs" Line="107">In externally visible method 'ParsedOption.Equals(ParsedOption)', validate parameter 'other' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Values" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'ParsedOption.Values' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ParsedOptionFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Create(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing" File="ParsedOptionFactory.cs" Line="41">In externally visible method 'ParsedOptionFactory.Create(string)', validate parameter 'rawKey' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Fclp.Internals.Parsing.OptionParsers">
+       <Types>
+        <Type Name="BoolCommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Fclp.Internals.Parsing.OptionParsers.BoolCommandLineOptionParser.TryParse(Fclp.Internals.Parsing.ParsedOption,System.Boolean@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="TryParse" Certainty="95" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="BoolCommandLineOptionParser.cs" Line="59">'BoolCommandLineOptionParser.Parse(ParsedOption)' calls 'BoolCommandLineOptionParser.TryParse(ParsedOption, out bool)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="BoolCommandLineOptionParser.cs" Line="46">In externally visible method 'BoolCommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TryParse(Fclp.Internals.Parsing.ParsedOption,System.Boolean&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="BoolCommandLineOptionParser.cs" Line="78">The 'this' parameter (or 'Me' in Visual Basic) of 'BoolCommandLineOptionParser.TryParse(ParsedOption, out bool)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DateTimeCommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="DateTimeCommandLineOptionParser.cs" Line="53">In externally visible method 'DateTimeCommandLineOptionParser.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="DateTimeCommandLineOptionParser.cs" Line="42">In externally visible method 'DateTimeCommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DoubleCommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="DoubleCommandLineOptionParser.cs" Line="52">In externally visible method 'DoubleCommandLineOptionParser.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="DoubleCommandLineOptionParser.cs" Line="41">In externally visible method 'DoubleCommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EnumCommandLineOptionParser`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="53">In method 'EnumCommandLineOptionParser&lt;TEnum&gt;.EnumCommandLineOptionParser()', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="54">Because the behavior of 'Convert.ToInt32(object)' could vary based on the current user's locale settings, replace this call in 'EnumCommandLineOptionParser&lt;TEnum&gt;.EnumCommandLineOptionParser()' with a call to 'Convert.ToInt32(object, IFormatProvider)'. If the result of 'Convert.ToInt32(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="50">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'EnumCommandLineOptionParser&lt;TEnum&gt;.EnumCommandLineOptionParser()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="77">In externally visible method 'EnumCommandLineOptionParser&lt;TEnum&gt;.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsDefined(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="90">In method 'EnumCommandLineOptionParser&lt;TEnum&gt;.IsDefined(string)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="67">In method 'EnumCommandLineOptionParser&lt;TEnum&gt;.Parse(ParsedOption)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumCommandLineOptionParser.cs" Line="67">In externally visible method 'EnumCommandLineOptionParser&lt;TEnum&gt;.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EnumFlagCommandLineOptionParser`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Flag" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+           <Issue Name="TypeNoAlternate" Certainty="95" Level="Error">Replace the term 'Flag' in type name 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;' with an appropriate alternate or remove it entirely.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumFlagCommandLineOptionParser.cs" Line="55">In method 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;.EnumFlagCommandLineOptionParser()', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumFlagCommandLineOptionParser.cs" Line="56">Because the behavior of 'Convert.ToInt32(object)' could vary based on the current user's locale settings, replace this call in 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;.EnumFlagCommandLineOptionParser()' with a call to 'Convert.ToInt32(object, IFormatProvider)'. If the result of 'Convert.ToInt32(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumFlagCommandLineOptionParser.cs" Line="50">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;.EnumFlagCommandLineOptionParser()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsDefined(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumFlagCommandLineOptionParser.cs" Line="103">In method 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;.IsDefined(string)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumFlagCommandLineOptionParser.cs" Line="72">In method 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;.Parse(ParsedOption)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="EnumFlagCommandLineOptionParser.cs" Line="70">In externally visible method 'EnumFlagCommandLineOptionParser&lt;TEnum&gt;.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Int32CommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="Int32CommandLineOptionParser.cs" Line="52">In externally visible method 'Int32CommandLineOptionParser.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="Int32CommandLineOptionParser.cs" Line="41">In externally visible method 'Int32CommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Int64CommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="Int64CommandLineOptionParser.cs" Line="28">In externally visible method 'Int64CommandLineOptionParser.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="Int64CommandLineOptionParser.cs" Line="17">In externally visible method 'Int64CommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ListCommandLineOptionParser`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="ListCommandLineOptionParser.cs" Line="54">Change 'List&lt;T&gt;' in 'ListCommandLineOptionParser&lt;T&gt;.Parse(ParsedOption)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NullableCommandLineOptionParser`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="NullableCommandLineOptionParser.cs" Line="48">In externally visible method 'NullableCommandLineOptionParser&lt;TNullableType&gt;.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NullableEnumCommandLineOptionParser`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Fclp.Internals.Parsing.ICommandLineOptionParserFactory)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="NullableEnumCommandLineOptionParser.cs" Line="44">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'NullableEnumCommandLineOptionParser&lt;TEnum&gt;.NullableEnumCommandLineOptionParser(ICommandLineOptionParserFactory)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="NullableEnumCommandLineOptionParser.cs" Line="55">In externally visible method 'NullableEnumCommandLineOptionParser&lt;TEnum&gt;.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StringCommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="StringCommandLineOptionParser.cs" Line="52">In externally visible method 'StringCommandLineOptionParser.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="StringCommandLineOptionParser.cs" Line="42">In externally visible method 'StringCommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UriCommandLineOptionParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CanParse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Uri" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="NonBreaking">
+             <Issue Name="ObjectCreation" Certainty="95" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="UriCommandLineOptionParser.cs" Line="57">'UriCommandLineOptionParser.CanParse(ParsedOption)' creates a new instance of 'Uri' which is never used. Pass the instance as an argument to another method, assign the instance to a variable, or remove the object creation if it is unnecessary.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="UriCommandLineOptionParser.cs" Line="57">In externally visible method 'UriCommandLineOptionParser.CanParse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parse(Fclp.Internals.Parsing.ParsedOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Parsing\OptionParsers" File="UriCommandLineOptionParser.cs" Line="45">In externally visible method 'UriCommandLineOptionParser.Parse(ParsedOption)', validate parameter 'parsedOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Fclp.Internals.Validators">
+       <Types>
+        <Type Name="NoDuplicateOptionValidator" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Validate(Fclp.Internals.ICommandLineOption)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Validators" File="NoDuplicateOptionValidator.cs" Line="64">In externally visible method 'NoDuplicateOptionValidator.Validate(ICommandLineOption)', validate parameter 'commandLineOption' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OptionNameValidator" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ValidateLongName(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Fclp.Internals.Validators.OptionNameValidator.ThrowInvalid(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Validators" File="OptionNameValidator.cs" Line="69">Method 'OptionNameValidator.ValidateLongName(string)' passes a literal string as parameter 'message' of a call to 'OptionNameValidator.ThrowInvalid(string, string)'. Retrieve the following string(s) from a resource table instead: "Long names must be longer than a single character. Single characters are reserve...".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ValidateShortAndLongName(System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Fclp.Internals.Validators.OptionNameValidator.ThrowInvalid(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Validators" File="OptionNameValidator.cs" Line="57">Method 'OptionNameValidator.ValidateShortAndLongName(string, string)' passes a literal string as parameter 'message' of a call to 'OptionNameValidator.ThrowInvalid(string, string)'. Retrieve the following string(s) from a resource table instead: "A short or long name must be provided.".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ValidateShortName(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Fclp.Internals.Validators.OptionNameValidator.ThrowInvalid(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Validators" File="OptionNameValidator.cs" Line="79">Method 'OptionNameValidator.ValidateShortName(string)' passes a literal string as parameter 'message' of a call to 'OptionNameValidator.ThrowInvalid(string, string)'. Retrieve the following string(s) from a resource table instead: "Short names must be a single character only.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Validators" File="OptionNameValidator.cs" Line="86">Method 'OptionNameValidator.ValidateShortName(string)' passes a literal string as parameter 'message' of a call to 'OptionNameValidator.ThrowInvalid(string, string)'. Retrieve the following string(s) from a resource table instead: "The character \', \' is not valid for a short name.".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VerifyDoesNotContainsReservedChar(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Fclp.Internals.Validators.OptionNameValidator.ThrowInvalid(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-07-21 06:54:28Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="z:\Builds\work\23f7f5f0221f789c\FluentCommandLineParser\Internals\Validators" File="OptionNameValidator.cs" Line="98">Method 'OptionNameValidator.VerifyDoesNotContainsReservedChar(string)' passes a literal string as parameter 'message' of a call to 'OptionNameValidator.ThrowInvalid(string, string)'. Retrieve the following string(s) from a resource table instead: "The character \', \' is not valid within a short or long name.".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105">
+   <Name>Array fields should not be read only</Name>
+   <Description>Read-only fields that reference arrays might not give the intended effect. Setting a field which references an array to read-only prevents the value of the field from being changed. Note that elements in the array can be changed. You can ignore this violation if protecting the contents of the array is not a concern.</Description>
+   <Resolution Name="Default">Either replace {0} with a strongly typed collection that cannot be changed, or replace the public field with a method that returns a clone of a private array.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182299(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">CriticalWarning</MessageLevel>
+   <File Name="securityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeCompoundWord">The discrete term '{0}' in member name {1} should be expressed as a compound word, '{2}'.</Resolution>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Do not ignore method results</Name>
+   <Description>The result of methods that return new instances of strings should be assigned to a variable and subsequently used. If the result of a method that creates a new object, such as String.ToLower(), is not assigned to a variable, the call is wasted.</Description>
+   <Resolution Name="ObjectCreation">{0} creates a new instance of {1} which is never used. Pass the instance as an argument to another method, assign the instance to a variable, or remove the object creation if it is unnecessary.</Resolution>
+   <Resolution Name="TryParse">{0} calls {1} but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+   <Name>Do not nest generic types in member signatures</Name>
+   <Description>Avoid API that require users to instantiate a generic type with another generic type as type argument. The syntax gets too complex.</Description>
+   <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182144(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716">
+   <Name>Identifiers should not match keywords</Name>
+   <Description>Identifiers which conflict with reserved language keywords should be avoided. Using a reserved keyword as an identifier makes it harder for consumers in other languages to use your API.</Description>
+   <Resolution Name="Member">Rename virtual/interface member {0} so that it no longer conflicts with the reserved language keyword '{1}'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182248(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032">
+   <Name>Implement standard exception constructors</Name>
+   <Description>Multiple constructors are required to correctly implement a custom exception. Missing constructors can make your exception unusable in certain scenarios. For example, the serialization constructor is required for handling exceptions in XML Web services.</Description>
+   <Resolution Name="Accessibility">Change the accessibility of {0} to {1}.</Resolution>
+   <Resolution Name="MissingConstructor">Add the following constructor to {0}: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182151(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>Interface methods should be callable by child types</Name>
+   <Description>Explicit method implementations are defined with private accessibility. Classes that derive from classes with explicit method implementations and choose to re-declare them on the class will not be able to call into the base class implementation unless the base class has provided an alternate method with appropriate accessibility. When overriding a base class method that has been hidden by explicit interface implementation, in order to call into the base class implementation, a derived class must cast the base pointer to the relevant interface. When calling through this reference, however, the derived class implementation will actually be invoked, resulting in recursion and an eventual stack overflow.</Description>
+   <Resolution Name="Default">Make {0} sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of {1} and is visible to derived classes.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>Mark ISerializable types with SerializableAttribute</Name>
+   <Description>The System.Runtime.Serialization.ISerializable interface allows the type to customize its serialization, while the Serializable attribute enables the runtime to recognize the type as being serializable.</Description>
+   <Resolution Name="Default">Add [Serializable] to {0} as this type implements ISerializable.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308">
+   <Name>Normalize strings to uppercase</Name>
+   <Description>Strings should be normalized to upper-case.</Description>
+   <Resolution Name="ToUpperInvariant">In method {0}, replace the call to {1} with String.ToUpperInvariant().</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725">
+   <Name>Parameter names should match base declaration</Name>
+   <Description>For usability reasons, parameter names in overridden methods should match those of the base declaration.</Description>
+   <Resolution Name="Default">In member {0}, change parameter name {1} to {2} in order to match the identifier as it has been declared in {3}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182251(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719">
+   <Name>Parameter names should not match member names</Name>
+   <Description>Parameter names should be distinct from member names.</Description>
+   <Resolution Name="Default">Change either member or parameter name {0} so that one differs from the other.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182252(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+   <Name>Properties should not return arrays</Name>
+   <Description>Properties that return arrays are prone to code inefficiencies. Consider using a collection or making this a method. See the design guidelines for more information.</Description>
+   <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/0fss9skc(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+   <Name>Specify StringComparison</Name>
+   <Description>If an overload exists that takes a StringComparison argument, it should always be called in favor of an overload that does not.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, such as when sorting a list of items for display in a list box, specify 'StringComparison.CurrentCulture' or 'StringComparison.CurrentCultureIgnoreCase' as the 'StringComparison' parameter. If comparing case-insensitive identifiers, such as file paths, environment variables, or registry keys and values, specify 'StringComparison.OrdinalIgnoreCase'. Otherwise, if comparing case-sensitive identifiers, specify 'StringComparison.Ordinal'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386080(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309">
+   <Name>Use ordinal StringComparison</Name>
+   <Description>For non-linguistic comparisons, StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase should be used instead of the linguistically-sensitive StringComparison.InvariantCulture.</Description>
+   <Resolution Name="StringComparison">{0} passes '{1}' as the 'StringComparison' parameter to {2}. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385972(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="TypeNoAlternate">Replace the term '{0}' in type name {1} with an appropriate alternate or remove it entirely.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
