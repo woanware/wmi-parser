@@ -80,6 +80,11 @@ namespace wmi
             }
 
             OutputToConsole(bindings);
+
+            if (fclp.Object.Output != null)
+            {
+                OutputToFile(bindings);
+            }
         }
 
         /// <summary>
@@ -216,20 +221,22 @@ namespace wmi
             {
                 cw.Configuration.Delimiter = "\t";
                 // Write out the file headers
-                cw.WriteField("File");
-                cw.WriteField("Key");
-                cw.WriteField("ValueName");
-                cw.WriteField("ValueType");
-                cw.WriteField("Entropy");
-                cw.WriteField("Entropy (8 byte TLV)");
-                cw.WriteField("Entropy (16 byte TLV)");
-                cw.WriteField("Entropy (32 byte TLV)");
-                cw.WriteField("Bin File");
-                cw.WriteField("Data");
-                cw.WriteField("Data (ASCII)");
+                cw.WriteField("Name");
+                cw.WriteField("Type");
+                cw.WriteField("Arguments");
+                cw.WriteField("Filter Name");
+                cw.WriteField("Filter Query");
                 cw.NextRecord();
 
-                
+                foreach (var b in bindings)
+                {
+                    cw.WriteField(b.Name);
+                    cw.WriteField(b.Type);
+                    cw.WriteField(b.Arguments);
+                    cw.WriteField(b.Filter);
+                    cw.WriteField(b.Query);
+                    cw.NextRecord(); ;
+                }
             }
         }
     }
