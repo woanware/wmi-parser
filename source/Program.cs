@@ -1,4 +1,5 @@
-﻿using Fclp;
+﻿using CsvHelper;
+using Fclp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -98,11 +99,10 @@ namespace wmi
 
             fclp.Setup(arg => arg.Output)
                 .As('o')
-                .Required()
                 .WithDescription("Output directory for analysis results");
 
             var header =
-               $"{Assembly.GetExecutingAssembly().GetName().Name} v{Assembly.GetExecutingAssembly().GetName().Version.ToString(3)}" +
+               $"\r\n{Assembly.GetExecutingAssembly().GetName().Name} v{Assembly.GetExecutingAssembly().GetName().Version.ToString(3)}" +
                "\r\n\r\nAuthor: Mark Woan / woanware (markwoan@gmail.com)" +
                "\r\nhttps://github.com/woanware/wmi-parser";
 
@@ -125,6 +125,9 @@ namespace wmi
                 fclp.HelpOption.ShowHelp(fclp.Options);
                 return false;
             }
+
+            Console.WriteLine(header);
+            Console.WriteLine("");
 
             return true;
         }
@@ -153,11 +156,14 @@ namespace wmi
                 }
             }
 
-            if (Directory.Exists(fclp.Object.Output) == false)
+            if (fclp.Object.Output != null)
             {
-                Console.WriteLine("Output directory (-o) does not exist");
-                return false;
-            }
+                if (Directory.Exists(fclp.Object.Output) == false)
+                {
+                    Console.WriteLine("Output directory (-o) does not exist");
+                    return false;
+                }
+            }            
 
             return true;
         }
@@ -173,28 +179,57 @@ namespace wmi
             {
                 if ((b.Name.Contains("BVTConsumer") && b.Filter.Contains("BVTFilter")) || (b.Name.Contains("SCM Event Log Consumer") && b.Filter.Contains("SCM Event Log Filter")))
                 {
-                    Console.WriteLine("{0}-{1}     \n(Common binding based on consumer and filter names,  possibly legitimate)", b.Name, b.Filter);
+                    Console.WriteLine("  {0}-{1} - (Common binding based on consumer and filter names,  possibly legitimate)", b.Name, b.Filter);
                 }
                 else
                 {
-                    Console.WriteLine("{0}-{1}", b.Name, b.Filter);
+                    Console.WriteLine("  {0}-{1}\n", b.Name, b.Filter);
                 }
 
                 if (b.Type == "CommandLineEventConsumer")
                 {
-                    Console.WriteLine("\tName: {0}", b.Name);
-                    Console.WriteLine("\tType: {0}", "CommandLineEventConsumer");
-                    Console.WriteLine("\tArguments: {0}", b.Arguments);
+                    Console.WriteLine("    Name: {0}", b.Name);
+                    Console.WriteLine("    Type: {0}", "CommandLineEventConsumer");
+                    Console.WriteLine("    Arguments: {0}", b.Arguments);
                 }
                 else
                 {
-                    Console.WriteLine("\tConsumer: {0}", b.Other);
+                    Console.WriteLine("    Consumer: {0}", b.Other);
                 }
 
-                Console.WriteLine("\n\tFilter:");
-                Console.WriteLine("\t\tFilter Name : {0}     ", b.Filter);
-                Console.WriteLine("\t\tFilter Query: {0}     ", b.Query);
+                Console.WriteLine("\n    Filter:");
+                Console.WriteLine("      Filter Name : {0}     ", b.Filter);
+                Console.WriteLine("      Filter Query: {0}     ", b.Query);
                 Console.WriteLine("");
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="bindings"></param>
+        private static void OutputToFile(List<Binding> bindings)
+        {
+            using (FileStream fileStream = new FileStream(Path.Combine(fclp.Object.Output, "wmi-parser.tsv"), FileMode.Create, FileAccess.Write))
+            using (StreamWriter streamWriter = new StreamWriter(fileStream))
+            using (CsvWriter cw = new CsvHelper.CsvWriter(streamWriter))
+            {
+                cw.Configuration.Delimiter = "\t";
+                // Write out the file headers
+                cw.WriteField("File");
+                cw.WriteField("Key");
+                cw.WriteField("ValueName");
+                cw.WriteField("ValueType");
+                cw.WriteField("Entropy");
+                cw.WriteField("Entropy (8 byte TLV)");
+                cw.WriteField("Entropy (16 byte TLV)");
+                cw.WriteField("Entropy (32 byte TLV)");
+                cw.WriteField("Bin File");
+                cw.WriteField("Data");
+                cw.WriteField("Data (ASCII)");
+                cw.NextRecord();
+
+                
             }
         }
     }
