@@ -55,7 +55,7 @@ namespace wmi
 
             foreach (var b in bindings)
             {
-                Regex regexEventConsumer = new Regex(@"\x00CommandLineEventConsumer\x00\x00(.*?)\x00.*?" + b.Name + "\x00\x00?([^\x00]*)?", RegexOptions.Multiline);
+                Regex regexEventConsumer = new Regex(@"\x00CommandLineEventConsumer\x00\x00([^\x00]*).*?" + b.Name + @"\x00", RegexOptions.Multiline | RegexOptions.Compiled);
 
                 var matches = regexEventConsumer.Matches(data);
                 foreach (Match m in matches)
@@ -64,15 +64,35 @@ namespace wmi
                     b.Arguments = m.Groups[1].Value;
                 }
 
-                regexEventConsumer = new Regex(@"(\w*EventConsumer)(.*?)(" + b.Name + @")(\x00\x00)([^\x00]*)(\x00\x00)([^\x00]*)", RegexOptions.Multiline);
+                regexEventConsumer = new Regex(@"(\w*EventConsumer)(.*?)(" + b.Name + @")(\x00\x00)([^\x00]*)(\x00\x00)([^\x00]*)", RegexOptions.Multiline | RegexOptions.Compiled);
                 matches = regexEventConsumer.Matches(data);
                 foreach (Match m in matches)
                 {
-                    b.Other = string.Format("{0} ~ {1} ~ {2} ~ {3}", m.Groups[1], m.Groups[3], m.Groups[5], m.Groups[7]);
+                    if (m.Groups[1].Value == "ActiveScriptEventConsumer")
+                    {
+                        b.Type = "ActiveScriptEventConsumer";
+                        b.Name = m.Groups[3].Value;
+                        if ((m.Groups[5].Value.ToLower() == "jscript") || (m.Groups[5].Value.ToLower() == "vbscript"))
+                        {
+                            b.Arguments = string.Format("ScriptLanguage= {0}" + Environment.NewLine + "                 Script= {1}", m.Groups[5], m.Groups[7]);
+                        }
+                        else b.Arguments = string.Format("ScriptLanguage= {0}" + Environment.NewLine + "                 ScriptFile= {1}", m.Groups[7], m.Groups[5]);
+                    }
+                    else
+                    {
+                        b.Other = string.Format("{0} ~ {1} ~ {2} ~ {3}", m.Groups[1], m.Groups[3], m.Groups[5], m.Groups[7]);
+                    }
                 }
 
-                regexEventConsumer = new Regex(@"(" + b.Filter + ")(\x00\x00)([^\x00]*)(\x00\x00)", RegexOptions.Multiline);
-                matches = regexEventConsumer.Matches(data);
+                //regexEventConsumer = new Regex(@"(\w*EventConsumer)(.*?)(" + b.Name + @")(\x00\x00)([^\x00]*)(\x00\x00)([^\x00]*)", RegexOptions.Multiline | RegexOptions.Compiled);
+                //matches = regexEventConsumer.Matches(data);
+                //foreach (Match m in matches)
+                //{
+                //    b.Other = string.Format("{0} ~ {1} ~ {2} ~ {3}", m.Groups[1], m.Groups[3], m.Groups[5], m.Groups[7]);
+                //}
+
+                Regex regexEventFilter = new Regex(@"(" + b.Filter + ")(\x00\x00)([^{\x00}2]*)(\x00\x00)", RegexOptions.Multiline | RegexOptions.Compiled);
+                matches = regexEventFilter.Matches(data);
                 foreach (Match m in matches)
                 {
                     b.Query = m.Groups[3].Value;
@@ -197,6 +217,12 @@ namespace wmi
                     Console.WriteLine("    Type: {0}", "CommandLineEventConsumer");
                     Console.WriteLine("    Arguments: {0}", b.Arguments);
                 }
+                else if (b.Type == "ActiveScriptEventConsumer")
+                {
+                    Console.WriteLine("    Name: {0}", b.Name);
+                    Console.WriteLine("    Type: {0}", "ActiveScriptEventConsumer");
+                    Console.WriteLine("    Script data: {0}", b.Arguments);
+                }
                 else
                 {
                     Console.WriteLine("    Consumer: {0}", b.Other);
@@ -232,9 +258,9 @@ namespace wmi
                 {
                     cw.WriteField(b.Name);
                     cw.WriteField(b.Type);
-                    cw.WriteField(b.Arguments);
+                    cw.WriteField(String.IsNullOrEmpty(b.Arguments)? b.Arguments : Regex.Replace(b.Arguments, @"\p{C}+", "."));
                     cw.WriteField(b.Filter);
-                    cw.WriteField(b.Query);
+                    cw.WriteField(String.IsNullOrEmpty(b.Query)? b.Query : Regex.Replace(b.Query, @"\p{C}+", "."));
                     cw.NextRecord(); ;
                 }
             }

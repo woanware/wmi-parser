@@ -3,3 +3,7 @@
 ################################################################################
 
 /source/bin
+/source/obj
+/source/.vs/wmi-parser/v16/Server/sqlite3
+/source/wmi-parser.csproj.user
+/source/.vs/wmi-parser/v16/.suo
